@@ -31,8 +31,6 @@ def get_candidates_by_skill(skill_name):              #возвращает ка
         skills = candidate["skills"].lower().split(", ")
         if skill_name in skills:
             result.append(candidate)
-    if not len(result):
-        result = "Кандидатов с таким навыком нет, введите другой навык"
     return result 
 
 
